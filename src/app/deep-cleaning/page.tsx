@@ -1,0 +1,20 @@
+import React from 'react';
+import BannerInner from '@/sections/common/BannerInner';
+import FooterInner from '@/sections/common/FooterInner';
+import NewsLeterInner from '@/sections/common/NewsLeterInner';
+import StickyNavInner from '@/sections/common/StickyNavInner'; 
+import DeepMain from '@/sections/deep-cleaning/DeepMain';
+
+const page: React.FC = () => {
+    return (
+        <div className='page-wrapper'>
+            <BannerInner title='Deep Cleaning' secondTitle='services' secondTitleLink='/services' thirdTitle='Commercial Cleaning' />
+            <DeepMain />
+            <NewsLeterInner />
+            <FooterInner />
+            <StickyNavInner />
+        </div>
+    );
+};
+
+export default page;
